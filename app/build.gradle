@@ -1,0 +1,23 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation 'junit:junit:4.13.2'
+	testImplementation 'org.hamcrest:hamcrest-all:1.3'
+}
+
+eclipse {
+	project {
+		name='video-store-app'
+	}
+
+	jdt {
+		sourceCompatibility=1.8
+	}
+}
